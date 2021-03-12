@@ -61,10 +61,6 @@
             </div>
         </section>
     </main>
-    <section>
-        <div class="contact-section">
-        </div>
-    </section>
 
     <section>
         <!-- Pricing section-->
@@ -108,6 +104,7 @@
         </div>
     </section>
     <section>
+        <!-- INFO SECTION -->
         <div class="info-section">
             <h2>About our Website</h2>
             <p>Hello!Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -123,27 +120,53 @@
                 dolore magna</p>h2>
         </div>
     </section>
+    <!-- CONTACT FORM -->
     <section>
         <div class="contact-form">
-            <form action="mailto:moraddarmobina@gmail.com" method="get" enctype="text/plain">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email..">
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Drop us a line" style="height:170px"></textarea>
-                <input type="submit" value="Submit">
+            <form action="#" class="bg-gray-100 shadow-sm rounded-md p-8 ">
+                <div class="mb-6">
+                    <label for="name" class="mb-3 block text-gray-700">Full name:</label>
+                    <input type="text" id="name"
+                        class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                        placeholder="John Doe" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="mb-3 block text-gray-700">Email address:</label>
+                    <input type="email" id="email"
+                        class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                        placeholder="john.doe@company.com" required>
+                </div>
+                <div class="mb-8">
+                    <label for="country" class="mb-3 block text-gray-700">Country:</label>
+                    <select id="country"
+                        class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Australia</option>
+                        <option value="2">Canada</option>
+                        <option value="3">USA</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="subject" class="mb-3 block text-gray-700">Subject</label>
+                    <textarea class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                        id="subject" name="subject" placeholder="Drop us a line" style="height:70px"></textarea>
+                </div>
+                <button type="submit"
+                    class="py-3 px-12 bg-teal-500 hover:bg-teal-600 mr-5 rounded-md text-white text-lg focus:outline-none w-full">Submit</button>
+            </form>
         </div>
     </section>
     <footer>
+        <!-- TWEET EMBEDS -->
+        <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">I just had a google meet with <a
+                    href="https://twitter.com/anson_ervin?ref_src=twsrc%5Etfw">@anson_ervin</a>. What a great guy. we
+                had a nice talk and are planning to do some pair programming session and working on a small project.
+                I&#39;m really excited about this.Thank you for all the help❤️</p>&mdash; Mobina (@DailyDoseMobina) <a
+                href="https://twitter.com/DailyDoseMobina/status/1368557527357681665?ref_src=twsrc%5Etfw">March 7,
+                2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <blockquote class="twitter-tweet">
             <p lang="en" dir="ltr">With the help of <a
                     href="https://twitter.com/developerjamiu?ref_src=twsrc%5Etfw">@developerjamiu</a> I as able to work
@@ -158,26 +181,24 @@
                     href="https://t.co/k7895lgjpB">pic.twitter.com/k7895lgjpB</a></p>&mdash; Anson 💙 (@anson_ervin) <a
                 href="https://twitter.com/anson_ervin/status/1368595930027597826?ref_src=twsrc%5Etfw">March 7, 2021</a>
         </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <div class="tweet-embed">
-            <a class="twitter-timeline" href="https://twitter.com/DailyDoseMobina">Tweets by
-                TwitterDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <a class="twitter-timeline" href="https://twitter.com/anson_ervin">Tweets by TwitterDev</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <div class="footer">
+        <!-- FOOTER DESCRIPTION AND ICONS -->
+        <div>
             <ul class="social-links">
-                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                <li>
+                    <ion-icon class="icon-facebook" name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon class="icon-twitter" name="logo-twitter"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon class="icon-instagram" name="logo-instagram"></ion-icon>
+                </li>
             </ul>
             <p>All rights reserved.</p>
             <p>Created by <a href="#">AnsonErvin Inc.</a>& <a href="#">Mobina Moraddar</a> </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
@@ -186,4 +207,6 @@
     Current website deployment link - https://website-agency.netlify.app
 
 
- ********** ----------------------------------------------------------------!> -->
+ ********** ----------------------------------------------------------------->
+
+<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just had a google meet with <a href="https://twitter.com/anson_ervin?ref_src=twsrc%5Etfw">@anson_ervin</a>. What a great guy. we had a nice talk and are planning to do some pair programming session and working on a small project. I&#39;m really excited about this.Thank you for all the help❤️</p>&mdash; Mobina (@DailyDoseMobina) <a href="https://twitter.com/DailyDoseMobina/status/1368557527357681665?ref_src=twsrc%5Etfw">March 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->

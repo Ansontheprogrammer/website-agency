@@ -1,3 +1,7 @@
 section {
-    margin-bottom: 250px;
+  margin-bottom: 25px;
+}
+
+.wrapper {
+  display: flex;
 }

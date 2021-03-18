@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+html {
+  font-family: "Lato", "Arial", sans-serif;
+}
+section {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.hero {
+  height: 100%;
+  max-height: 90vh;
+}
+/* INFO SECTION */
+.info-section {
+  background-color: rgb(230, 237, 240);
+  color: rgb(87, 87, 87);
+}
+.info-section ion-icon {
+  color: #24e2a3;
+  font-size: 250%;
+}
+.info-section h2 {
+  font-weight: 300;
+  font-size: 220%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.info-section h3 {
+  font-weight: 400;
+  font-size: 120%;
+}
+.info-section p {
+  font-weight: 300;
+  font-size: 95%;
+  color: rgb(100, 100, 100);
+}
+
+/* SIGN UP  */
+
+.contact-section h2 {
+  font-weight: 300;
+  font-size: 220%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.contact-section h2:after {
+  display: block;
+  height: 2px;
+  background-color: #24e2a3;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  height: 100% !important;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+*:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: scale(1.02);
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(189, 214, 219);
+  padding: 50px;
+  font-size: 80%;
+}
+.footer-nav {
+  float: left;
+  list-style: none;
+}
+.social-links {
+  float: right;
+  list-style: none;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(139, 139, 139);
+  transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: rgb(97, 97, 97);
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 50px;
+}
+.wrapper {
+  display: flex;
+}
+/* RESPONSIVE FOOTER */
+@media only screen and (max-width: 375px) {
+  .footer-nav {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .social-links {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+}
+
+/* #24e2a3; */

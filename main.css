@@ -33,6 +33,7 @@ section {
 }
 
 /* SIGN UP  */
+
 .contact-section h2 {
   font-weight: 300;
   font-size: 220%;
@@ -71,10 +72,12 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
-button {
-  background-color: #24e2a3;
+
+button:hover {
+  transform: scale(1.02);
+  transition: all;
+  transition-duration: 0.5s;
 }
-/* TWEET EMBEDS */
 
 /* FOOTER */
 
@@ -143,3 +146,22 @@ footer p {
 .wrapper {
   display: flex;
 }
+/* RESPONSIVE FOOTER */
+@media only screen and (max-width: 375px) {
+  .footer-nav {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .social-links {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  footer p {
+    margin-top: 20px;
+  }
+}
+
+/* #24e2a3; */

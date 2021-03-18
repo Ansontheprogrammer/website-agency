@@ -1,5 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+html {
+  font-family: "Lato", "Arial", sans-serif;
+}
 section {
   margin-bottom: 25px;
+}
+/* INFO SECTION */
+.info-section {
+  background-color: rgb(230, 237, 240);
+  color: rgb(87, 87, 87);
+}
+.info-section ion-icon {
+  color: #24e2a3;
+  font-size: 250%;
+}
+.info-section h2 {
+  font-weight: 300;
+  font-size: 220%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.info-section h3 {
+  font-weight: 400;
+  font-size: 120%;
+}
+.info-section p {
+  font-weight: 300;
+  font-size: 95%;
+  color: rgb(100, 100, 100);
 }
 
 /* SIGN UP  */

@@ -60,14 +60,31 @@
                                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
                                 </div>
                                 <div class="-mr-2">
-                                    <button type="button" onclick="toggleNavbar('collapse-navbar')"
-                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                                        <span class="sr-only @click">Close main menu</span>
-                                        <!-- Heroicon name: outline/x -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M6 18L18 6M6 6l12 12" />
+                                    
+                                    <button button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleNavbar('collapse-navbar')"
+                                        >
+                                        <span class="sr-only">Open main menu</span>
+                                        <!--
+                                                    Icon when menu is closed.
+                                        
+                                                    Heroicon name: outline/menu
+                                        
+                                                    Menu open: "hidden", Menu closed: "block"
+                                                  -->
+                                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                        <!--
+                                                    Icon when menu is open.
+                                        
+                                                    Heroicon name: outline/x
+                                        
+                                                    Menu open: "block", Menu closed: "hidden"
+                                                  -->
+                                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                         </svg>
                                     </button>
 
@@ -143,12 +160,12 @@
     </section>
 
     <section class="container">
-        <h2 class='text-2xl mx-auto text-center'>Pricing</h2>
-        <h3 class='text-lg mx-auto text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <h2 class=' text-center mt-4 text-3xl leading-8 font-extrabold tracking-tight  sm:text-4xl'>Pricing</h2>
+        <h3 class='mt-4 text-center max-w-2xl text-xl  lg:mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
             dolore magna</h3>
         <div class=" flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
-        <article class="bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg">
+        <article class="pricing-card bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg">
             <h5 class="font-bold text-base">Basic</h5>
             <h2 class="pb-4 flex justify-center font-bold border-b border-gray-300">
                 <span class="text-3xl mt-6 mr-1">$</span><span class="text-6xl"> 199.99</span>
@@ -180,7 +197,7 @@
                 Learn More
             </button>
         </article>
-        <article class="bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg">
+        <article class="pricing-card bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg">
             <h5 class="font-bold text-base">Master</h5>
             <h2 class="flex justify-center pb-4 font-bold border-b border-gray-200">
                 <span class="text-3xl mt-6 mr-1">$</span><span class="text-6xl">399.99</span>

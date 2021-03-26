@@ -6,20 +6,32 @@
 /* #FEFFFF */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Lato", "Arial", sans-serif;
 }
 section {
   margin-bottom: 25px;
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .hero {
   max-height: 100vh;
 }
 /* INFO SECTION */
-.info-section {
+#info {
   background-color: rgb(230, 237, 240);
+}
+.info-section {
   color: rgb(87, 87, 87);
 }
 .info-section ion-icon {
@@ -174,6 +186,18 @@ footer p {
   margin-left: 10px;
   box-shadow: 2.5px 2.5px 20px rgba(94, 94, 94, 0.5);
 }
+
+.card:hover {
+  transition-duration: 1s;
+  transition: all;
+  transform: scale(1.05);
+}
+
+.white-background {
+  color: #17252a;
+  background-color: #fff !important;
+}
+
 /* RESPONSIVE FOOTER */
 @media only screen and (max-width: 760px) {
   .form-img {
@@ -216,4 +240,62 @@ footer p {
   }
 }
 
-/* #24e2a3; */
+/*
+  OVERRIDING TAILWIND COLOR CLASSES
+*/
+
+.text-indigo-600 {
+  color: #2b7a78 !important;
+}
+
+.bg-indigo-600 {
+  background-color: #2b7a78 !important;
+}
+
+.featured-pricing-card {
+  background-image: linear-gradient(90deg, #2b7a78 0%, #3aafa9 100%);
+}
+
+/* TODO: CHECK AND SEE IF WE CAN GET THIS CSS TO WORK*/
+/* Dropdown CSS */
+
+/* Style The Dropdown Button */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */

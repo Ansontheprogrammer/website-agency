@@ -77,42 +77,50 @@
                                         
                                                     Menu open: "hidden", Menu closed: "block"
                                                   -->
-                                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                            aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                                        </svg>
-                                        <!--
+                                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                    <!--
                                                     Icon when menu is open.
                                         
                                                     Heroicon name: outline/x
                                         
                                                     Menu open: "block", Menu closed: "hidden"
                                                   -->
-                                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                            aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
+                                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
 
-                                </div>
                             </div>
                             <div class='hidden' id="collapse-navbar">
                                 <div class="px-2 pt-3 pb-4 space-y-1">
                                     <a href="#info"
                                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
 
-                                    <a href="#pricing"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                                <a href="#pricing"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
 
-                                    <a href="#"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Portfolio</a>
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Portfolio</a>
 
-                                    <a href="#contact"
-                                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
-                                </div>
+                                <a href="#contact"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <script>
+                    function toggleNavbar(collapseID) {
+                        document.getElementById(collapseID).classList.toggle("hidden");
+                        document.getElementById(collapseID).classList.toggle("flex");
+                    }
+                </script>
 
                     <script>
                         function toggleNavbar(collapseID) {
@@ -163,12 +171,19 @@
                     alt="">
             </div>
         </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format"
+                alt="">
+        </div>
+    </div>
     </section>
 
     <section id='pricing'>
         <div class="container">
         <h2 class=' text-center mt-4 text-3xl leading-8 font-extrabold tracking-tight  sm:text-4xl'>Pricing</h2>
-        <h3 class='mt-4 text-center max-w-2xl text-xl  lg:mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <h3 class='mt-4 text-center max-w-2xl text-xl  lg:mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor
             incididunt ut labore et
             dolore magna</h3>
         <div class=" flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
@@ -216,9 +231,37 @@
             <button
                 class="uppercase text-center text-sm mt-12 xl:px-24 px-12 sm:px-16 py-2 rounded-sm font-bold text-primary-very-light"
                 style="background-image:linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);">
-                Learn More
-            </button>
-        </article>
+                <h5 class="font-bold text-base ">Professional</h5>
+                <h2 class="font-bold pb-4 mt-2 border-b border-gray-100 flex justify-center">
+                    <span class="text-3xl mt-6 mr-1">$</span><span class="text-6xl "> 249.99</span>
+                </h2>
+                <ul class=" text-sm font-bold">
+                    <li class="pt-4 pb-4 border-b border-gray-200">1 TB Storage</li>
+                    <li class="pt-4 pb-4 border-b border-gray-200">5 Users Allowed</li>
+                    <li class="pt-4 pb-4 border-b border-gray-200">Send up to 10 GB</li>
+                </ul>
+                <button
+                    class="uppercase text-center text-sm mt-10 xl:px-24 px-12 sm:px-16 py-2 rounded-md font-bold bg-primary-very-light text-primary-blue">
+                    Learn More
+                </button>
+            </article>
+            <article
+                class="pricing-card bg-white w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center text-primary-dark rounded-lg">
+                <h5 class="font-bold text-base">Master</h5>
+                <h2 class="flex justify-center pb-4 font-bold border-b border-gray-200">
+                    <span class="text-3xl mt-6 mr-1">$</span><span class="text-6xl">399.99</span>
+                </h2>
+                <ul class="text-sm font-bold">
+                    <li class="pt-4 pb-4 border-b border-gray-200">2 TB Storage</li>
+                    <li class="pt-4 pb-4 border-b border-gray-200">10 Users Allowed</li>
+                    <li class="pt-4 pb-4 border-b border-gray-200">Send up to 20 GB</li>
+                </ul>
+                <button
+                    class="uppercase text-center text-sm mt-12 xl:px-24 px-12 sm:px-16 py-2 rounded-md font-bold text-primary-very-light"
+                    style="background-image:linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);">
+                    Learn More
+                </button>
+            </article>
         </div>
         </div>
     </section>
@@ -310,80 +353,82 @@
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
-        <!-- <div class="grid-cols-2 gap-4 flex ">
-            <div><img src="images/63e4b7795d1cd778b8010691094ebbb1.jpg" alt="picture"> </div>
-            <div class=" contact-form"> -->
+        <div class="img-section">
+            <div><img class="form-img" src="images/63e4b7795d1cd778b8010691094ebbb1.jpg" alt="picture"> </div>
 
-        <div class="row">
-            <form method="POST" action="#" class="contact-form">
+            <div class="contact-form">
                 <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name:</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" id="name"
-                            class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" name="name"
-                            placeholder="Your name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email:</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" id="email"
-                            class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
-                            name="email" placeholder="Your email " required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="country">Country:</label>
-                        <select id="country"
-                            class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" required>
-                            <option value="">Select an option</option>
-                            <option value="1">Australia</option>
-                            <option value="2">Canada</option>
-                            <option value="3">USA</option>
-                        </select>
-                    </div>
-                </div>
+                    <form method="POST" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name:</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" id="name"
+                                    class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                                    name="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" id="email"
+                                    class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                                    name="email" placeholder="Your email " required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="country">Country:</label>
+                                <select id="country"
+                                    class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                                    required>
+                                    <option value="">Select an option</option>
+                                    <option value="1">Australia</option>
+                                    <option value="2">Canada</option>
+                                    <option value="3">USA</option>
+                                </select>
+                            </div>
+                        </div>
 
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="message">Drop us a line</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" id="message"
-                            class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
-                            placeholder="Your message" cols="30" rows="3"></textarea>
-                    </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="message">Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" id="message"
+                                    class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+                                    placeholder="Your message" cols="30" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <button type="submit" style="background-color:#24e2a3;"
+                                    class="py-3 px-12 mr-5 rounded-md text-white text-lg focus:outline-none w-full">Sign
+                                    Up</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <button type="submit" style="background-color:#24e2a3;"
-                            class="py-3 px-12 mr-5 rounded-md text-white text-lg focus:outline-none w-full">Sign
-                            Up</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        </div>
-        <!-- TWEET EMBEDS -->
+            </div>
     </section>
-    <div class='wrapper'>
-        <a class="twitter-timeline" data-tweet-limit="1"
-            href="https://twitter.com/anson_ervin?ref_src=twsrc%5Etfw">Tweets by anson_ervin</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- TWEET EMBEDS -->
+    <section>
+        <div class='wrapper'>
+            <a class="twitter-timeline" data-tweet-limit="1"
+                href="https://twitter.com/anson_ervin?ref_src=twsrc%5Etfw">Tweets by anson_ervin</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        <a class="twitter-timeline" data-tweet-limit="1"
-            href="https://twitter.com/DailyDoseMobina?ref_src=twsrc%5Etfw">Tweets by DailyDoseMobina</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+            <a class="twitter-timeline" data-tweet-limit="1"
+                href="https://twitter.com/DailyDoseMobina?ref_src=twsrc%5Etfw">Tweets by DailyDoseMobina</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </section>
     <footer>
 

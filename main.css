@@ -29,13 +29,13 @@ section {
 }
 /* INFO SECTION */
 #info {
-  background-color: rgb(230, 237, 240);
+  background-color: #def2f1;
 }
 .info-section {
   color: rgb(87, 87, 87);
 }
 .info-section ion-icon {
-  color: #24e2a3;
+  color: #2b7a78;
   font-size: 250%;
 }
 .info-section h2 {
@@ -57,11 +57,12 @@ section {
 }
 
 /* SIGN UP  */
+
 .img-section {
   display: flex;
 }
 .form-img {
-  margin: 20px 50px;
+  margin: 0px 50px 0px 50px;
   display: inline;
   width: 400px;
 }
@@ -82,15 +83,17 @@ section {
   margin: 0 auto;
   margin-top: 30px;
 }
-
+#form-background {
+  background-color: #def2f1;
+  padding: 25px;
+}
 .contact-form {
   width: 80%;
   margin: 0 auto;
 }
 input[type="text"],
 input[type="email"],
-select,
-textarea {
+select {
   width: 100%;
   padding: 7px;
   border-radius: 3px;

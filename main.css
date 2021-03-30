@@ -12,6 +12,12 @@
   box-sizing: border-box;
 }
 
+.nav-fixed {
+  top: 0;
+  position: fixed;
+  background-color: #2b7a78;
+}
+
 html {
   font-family: "Lato", "Arial", sans-serif;
 }
@@ -188,7 +194,7 @@ footer p {
 }
 
 .card:hover {
-  transition-duration: 1s;
+  transition-duration: 3s;
   transition: all;
   transform: scale(1.05);
 }

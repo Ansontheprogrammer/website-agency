@@ -116,8 +116,8 @@ button:hover {
 
 footer {
   background-color: rgb(189, 214, 219);
-  padding: 50px;
-  font-size: 80%;
+  padding: 20px;
+  font-size: 85%;
 }
 .footer-nav {
   float: left;
@@ -174,7 +174,8 @@ footer {
 footer p {
   color: #888;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 .wrapper {
   display: flex;
@@ -199,6 +200,12 @@ footer p {
 }
 
 /* RESPONSIVE FOOTER */
+@media only screen and (max-width: 1020px) {
+  .form-img {
+    margin: 20px 40px;
+    width: 380px;
+  }
+}
 @media only screen and (max-width: 760px) {
   .form-img {
     margin: 50px 20px;
@@ -218,6 +225,9 @@ footer p {
   }
 }
 @media only screen and (max-width: 375px) {
+  body {
+    font-size: 70%;
+  }
   .form-img {
     margin: 50px auto;
     display: flex;
@@ -237,6 +247,10 @@ footer p {
   }
   footer p {
     margin-top: 20px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 
